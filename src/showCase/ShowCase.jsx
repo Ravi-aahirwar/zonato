@@ -3,9 +3,8 @@ import NavigationBar from '../components/navbar/Navbar'
 import css from './ShowCase.module.css'
 import filterCss from '../components/filterBox/FilterBox.module.css'
 import Footer from '../components/footer/Footer'
-import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
+import productdb from '../components/productListing/productData/Items'
 
 import filtersIcon from '/icons/filter.png'
 import deliveryTimeIcon from '/icons/delivery-time.png'
@@ -142,9 +141,7 @@ export default function ShowCase() {
         setActiveTab(items.name)
         setActiveCollection(items.name);
     }
-
     // sort by filters
-
     const [filteredText, setFilterText] = useState(false);
     const [crossFilter, setCrossFilter] = useState(false);
     const handleFilterClicked = (filterText) => {
@@ -158,73 +155,15 @@ export default function ShowCase() {
     }
 
     // ------Search filter -----
-    const [query, serQuery] = useState("");
-    const [datas, setDatas] = useState([]);
-    const [page, setPage] = useState(1);
-    const [loading, setLoading] = useState(true)
+    
 
     const handleChanged = (event) => {
         serQuery(event.target.value)
     }
-
-    const fetchData = async () => {
-        try {
-            const response = await axios.get(`/api/products?page=${page}&query=${query}`);
-            const newData = response.data;
-
-            setDatas((prev) => [...prev, ...newData]);
-            setLoading(false)
-        } catch (error) {
-            toast.error("something wrong with server try again after  some time !", error, {
-                position: toast.POSITION.TOP_RIGHT,
-            });
-        }
-    };
-
-    const handleInfiniteScroll = () => {
-        try {
-            if (
-                window.innerHeight + document.documentElement.scrollTop + 1 >=
-                document.documentElement.scrollHeight
-            ) {
-                setLoading(true)
-                setPage((prev) => prev + 1);
-            }
-        } catch (error) {
-            console.error(error);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleInfiniteScroll);
-        return () => {
-            window.removeEventListener('scroll', handleInfiniteScroll);
-        };
-    }, []);
-
-    useEffect(() => {
-        fetchData();
-    }, [page, query]);
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleInfiniteScroll);
-        return () => {
-            window.removeEventListener('scroll', handleInfiniteScroll);
-        };
-    }, [page, query]);
-
-
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleInfiniteScroll);
-        return () => {
-            window.removeEventListener('scroll', handleInfiniteScroll);
-        };
-    }, []);
-
-    const filterItems = datas?.filter((myData) => myData.name.toLowerCase().indexOf(query.toLowerCase()) !== -1);
-    function filteredData(query, setDatas, filteredText) {
-        let filteredProducts = setDatas
+    const [query, serQuery] = useState("");
+    const filterItems = productdb.filter((myData) => myData.name.toLowerCase().indexOf(query.toLowerCase()) !== -1);
+    function filteredData(query, productdb, filteredText) {
+        let filteredProducts = productdb
         if (query) {
             filteredProducts = filterItems
         }
@@ -237,10 +176,10 @@ export default function ShowCase() {
                     open === filteredText
                 ))
         }
-
         return filteredProducts
     }
-    const filterResult = filteredData(query, datas, filteredText)
+    const filterResult = filteredData(query, productdb, filteredText)
+    console.log(productdb)
     const result = filterResult?.length > 0 ? (
         filterResult.map(
             ({ promoted, time, offB, proExtraB, off, proExtra, name, rating, imgSrc, rate, location }) => {
@@ -265,15 +204,6 @@ export default function ShowCase() {
     ) : (
         <SearchError />
     )
-    // set time out function
-    useEffect(() => {
-        const delay = 3000;
-        const timeoutId = setTimeout(() => {
-          setLoading(false);
-        }, delay);
-        return () => clearTimeout(timeoutId);
-      }, []); 
-     
     return (
         <>
 
@@ -428,9 +358,7 @@ export default function ShowCase() {
                         </div>
                     </div>
                 </div>
-                {loading &&  <center><p>Loading...</p></center>  }
                 <Footer />
-                <ToastContainer />
             </div>
         </>
     )

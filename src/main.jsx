@@ -5,11 +5,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoaderDesign from './Loader/LoaderDesign';
 // import './dateServer/server'
 
-import { makeServer } from './dateServer/server';
+// import { makeServer } from './dateServer/server';
 
-if (process.env.NODE_ENV === 'development') {
-  makeServer();
-}
+// if (process.env.NODE_ENV === "development") {
+//   makeServer({ environment: "development" })
+// }
 
 const App = lazy(() => wait(2000).then(() => import('./App')));
 const ShowCase = lazy(() => wait(2000).then(() => import('./showCase/ShowCase')));

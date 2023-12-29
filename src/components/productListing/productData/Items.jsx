@@ -7,8 +7,8 @@ import icecreamImg from '/images/Food/icecream.png';
 import kfcSCImg from '/images/Food/kfc.png';
 import pizzaSCImg from '/images/Food/pizza.png';
 import udupiImg from '/images/Food/udupiimg.avif';
-// 
-const item = [
+
+const productdb = [
     {
         promoted: true,
         time: "25",
@@ -210,7 +210,6 @@ const item = [
         description:"Andhra, Biryani, South Indian, Desserts, Beverages, Hyderabadi",
         location:"Seshadripuram, Bangalore",
         rate:400
-
     },
     {
         promoted: false,
@@ -242,7 +241,62 @@ const item = [
         location:" North Indian, Continental",
         rate:350
     },
+    {
+        promoted: true,
+        time: "25",
+        offB: false,
+        proExtraB: true,
+        off: "30",
+        proExtra: "40",
+        name: "The Bier Library",
+        rating: '4.8',
+        imgSrc: "https://b.zmtcdn.com/data/pictures/9/18843699/fb66205bef846cabc8e0fcfdfabfaac5_featured_v2.jpg",
+        id: 16,
+        description: "North Indian, Biryani, Fast Food, Italian, BBQ, Bar Food, Desserts, Beverages",
+        location: " Koramangala 6th Block, Bangalore",
+        rate: 230,
+        vegNonveg: "Pure Veg",
+        outdoor: "Outdoor Seating",
+        open: "Open Now"
+
+    },
+    {
+        promoted: true,
+        time: "25",
+        offB: false,
+        proExtraB: true,
+        off: "30",
+        proExtra: "40",
+        name: "Magique",
+        rating: '4.0',
+        imgSrc: "https://b.zmtcdn.com/data/pictures/0/20540040/04ac68e98bd062fbaf9b66af8d233094_featured_v2.jpg",
+        id: 17,
+        description: "North Indian, Biryani, Fast Food, Italian, BBQ, Bar Food, Desserts, Beverages",
+        location: " Koramangala 6th Block, Bangalore",
+        rate: 230,
+        vegNonveg: "Pure Veg",
+        outdoor: "Outdoor Seating",
+        open: "Open Now"
+    },
+    {
+        promoted: true,
+        time: "25",
+        offB: false,
+        proExtraB: true,
+        off: "30",
+        proExtra: "40",
+        name: "Chin Lung Resto Bar",
+        rating: '4.0',
+        imgSrc: "https://b.zmtcdn.com/data/pictures/0/19583770/631c106a5a1e5b2129a83920afef6122_featured_v2.jpg",
+        id: 18,
+        description: "Bar Food, Chinese, North Indian",
+        location: " Koramangala 4th Block, Bangalore",
+        rate: 230,
+        vegNonveg: "Pure Veg",
+        outdoor: "Outdoor Seating",
+        open: "Open Now"
+    },
     
  
 ]
-export default item;
+export default productdb;

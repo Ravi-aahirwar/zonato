@@ -24,7 +24,7 @@ let NavigationBar = ({ toogleMenu, setToggleMenu, handleChanged, query }) => {
         <div className={css.navbarInner}>
             <div className={css.bothBar} >
                 <div className={css.leftSide}>
-                    <Link to='/' className={css.appTxt}>Zomato</Link>
+                    <Link to='/' className={css.appTxt}>Zonato</Link>
                     <div className={css.searchBar}>
                         <SearchBar query={query} handleChanged={handleChanged} />
                     </div>

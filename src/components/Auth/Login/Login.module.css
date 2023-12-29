@@ -1,0 +1,18 @@
+.socialSignupBox {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(207, 207, 207);
+    color: rgb(105, 105, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(153, 149, 149);
+    font-weight: 400;
+    color: white;
+}
+.socialSignupBox:hover{
+    background-color: rgba(128, 128, 128, 0.484);
+    color: black;
+}

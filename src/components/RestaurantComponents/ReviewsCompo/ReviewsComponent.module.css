@@ -1,0 +1,49 @@
+.outerDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.innerDiv{
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+}
+
+.left{
+ width: 80%;
+ margin: auto;
+
+}
+
+/* .right{
+    width: 20%;
+    border: 1px solid red;
+
+} */
+
+.dropDowns{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 780px){
+    .innerDiv{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .left{
+     width: 100%;
+    }
+    
+    .right{
+        margin: 10px -15px;
+        width: 100%;
+    }
+}

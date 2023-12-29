@@ -1,0 +1,250 @@
+.outerDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.innerDiv {
+    width: 90%;
+    height: 100%;
+}
+
+.breadcrumb {
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 10px;
+    color: var(--color-p5-text);
+}
+.showCaseDiv {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    background-color: var(--bg-white);
+    z-index: 2;
+
+}
+.innerCaseDiv{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.caseDiv{
+    margin: 5px;
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+}
+.innerCatDiv{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caseImgDiv{
+    width: 40%;
+    height: 60%;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.img{
+    width: 50%;
+    height: 80%;
+    object-fit: fill;
+}
+.txtDiv{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.txt{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.imgDivBgClr{
+    background-color: rgb(238, 238, 238)
+}
+.caseBorder{
+    border-bottom: 3px solid var(--color-pinky);
+}
+.txtColor{
+    color: var(--color-pinky);
+}
+/* ------------------------------------------------------------------ */
+.innerDiv3 {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-white);
+    padding: 0.7rem 0;
+    z-index: 3;
+}
+
+.filtersDiv {
+    width: 90%;
+    margin-left: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.innerDiv2 {
+    width: 100%;
+    margin-top: -10px;
+    background-color: var(--bg-f8f8f8);
+}
+/* ------------------slider  */
+.w7 {
+    width: 90%;
+    margin: auto;
+}
+.w7A{
+    width: 90%;
+    margin: auto; 
+}
+.innerDiv4,
+.innerDiv5 {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-f8f8f8);
+}
+.innerDiv5{
+    background-color: var(--bg-white);
+}
+
+.innerDiv4Title,
+.innerDiv5Title {
+    font-size: 2rem;
+    font-weight: 450;
+    margin: -0.5rem 0 1rem 0;
+    color: var(--color-title-text);
+}
+.rollerCarosuel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.cardW {
+    width: 150px;
+    margin: 0 10px;
+}
+.innerDiv6 {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+
+}
+
+.innerDiv6Title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 450;
+    color: var(--color-title-text);
+    margin-left: 9px;
+}
+
+.innerDiv6Body {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .filterOuterDiv {
+    width: max-content;
+    height: 35px;
+    margin: 5px;
+    border-radius: 7px;
+    border: var(--brd2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-p2-text);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.imgBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexInner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+.flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftIcon{
+    height: 17px;
+} */
+.mainDiv{
+    position: relative;
+    max-width: 110rem;
+    max-height: initial;
+    margin: 0px auto;
+}
+.innerMainDiv{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    transition: top 0.5s ease-in-out 0s;
+}
+.smallMainDiv{
+    flex-shrink: 0;
+    margin-right: 1.4rem;
+    position: relative;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.miniDiv{
+    border: 1px solid rgb(207, 207, 207);
+    color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    font-size: 1.4rem;
+}
+.iconsDiv{
+    margin-right: 0.5rem;
+}
+.imgFilter{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: inherit;
+}

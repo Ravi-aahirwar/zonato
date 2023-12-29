@@ -1,0 +1,34 @@
+.outerErr {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 5rem 0px;
+    width: 100%;
+}
+
+.innerErr {
+    position: relative;
+    max-width: 100%;
+    width: 26rem;
+    height: 16rem;
+    overflow: hidden;
+}
+.imgErr{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: none;
+    opacity: 1;
+    will-change: transform, opacity;
+    border-radius: inherit;
+    filter: unset;
+    transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+}
+.errTxt{
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    color: rgb(79, 79, 79);
+}

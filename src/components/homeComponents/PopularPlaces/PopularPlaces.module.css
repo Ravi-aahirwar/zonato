@@ -1,0 +1,73 @@
+.outerDiv {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.title {
+    display: flex;
+    margin-top: 4rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+    /* width: 100%; */
+}
+.imgDiv{
+    margin-left: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+.miniDiv{
+    position: relative;
+    max-width: 100%;
+    width: 7rem;
+    height: 3.5rem;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+
+}
+.para{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 400;
+    /* color: rgb(28, 28, 28); */
+    color: rgb(105, 105, 105);
+
+    margin: 0px;
+    font-weight: 300;
+}
+.cont{
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.pCont{
+    margin: 0px;
+    max-width: 90rem;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: rgb(105, 105, 105);
+}
+.titleTxt {
+    font-size: var(--font-title-sz1);
+    font-weight: var(--font-title-weight);
+}
+
+.bld {
+    font-size: var(--font-title-sz1);
+    font-weight: 600;
+}
+
+.placesCards {
+    margin: 2rem 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,7 +1,20 @@
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
+# Zonato
 
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+Brief description of your project.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+## Getting Started
+
+### Prerequisites
+
+List any prerequisites that need to be installed before getting started.
+

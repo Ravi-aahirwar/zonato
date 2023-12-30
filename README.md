@@ -1,5 +1,4 @@
 # Zonato -  Food Ordering Web App  
-[Live App Demo link]((https://zonato.netlify.app/))
 Zomato is a online food ordering web  application, i have make a clone Zonato  using React Js.
 ## Tech Stack:
 1. React js
@@ -19,3 +18,4 @@ Zomato is a online food ordering web  application, i have make a clone Zonato  u
 + Filter by Restaurants/Dishes
 + Filter by rating
 + Filter Veg/nonVeg
+[Live App Demo link]((https://zonato.netlify.app/))

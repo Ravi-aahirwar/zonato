@@ -14,17 +14,11 @@ Zomato is a online food ordering web  application, i have make a clone Zonato  u
 7. Order Online Page
 ## Features
 * comment/like/unline/follow/unfollow
-- Search Functionality/Loadere spinner
++ Search Functionality/Loadere spinner
 + Filter by Restaurants/Dishes
 + Filter by rating
 + Filter Veg/nonVeg
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
 
 [I'm a relative reference to a repository file](../blob/master/LICENSE)
 
-[You can use numbers for reference-style link definitions][1]
 

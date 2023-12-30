@@ -1,4 +1,4 @@
-# Zonato -  Food Ordering Web App
+# Zonato -  Food Ordering Web App  [Live App Demo link]([https://www.google.com](https://zonato.netlify.app/))
 Zomato is a online food ordering web  application, i have make a clone Zonato  using React Js.
 ## Tech Stack:
 1. React js
@@ -13,14 +13,8 @@ Zomato is a online food ordering web  application, i have make a clone Zonato  u
 6. Overview Page
 7. Order Online Page
 ## Features
-* ravi kuma aahirwar
-- Or minuses
-+ Or pluses
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+* comment/like/unline/follow/unfollow
+- Search Functionality/Loadere spinner
++ Filter by Restaurants/Dishes
++ Filter by rating
++ Filter Veg/nonVeg

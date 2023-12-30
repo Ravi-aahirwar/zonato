@@ -1,6 +1,8 @@
-# Zonato
+# Zonato - Zomato Food Ordering Web App
 
-Brief description of your project.
+Zonato is a web application that allows users to browse and order food from various restaurants. It provides a convenient platform for users to discover new cuisines and enjoy delicious meals.
+
+![Zonato Logo](images/zonato-logo.png)
 
 ## Table of Contents
 
@@ -8,6 +10,7 @@ Brief description of your project.
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -16,5 +19,14 @@ Brief description of your project.
 
 ### Prerequisites
 
-List any prerequisites that need to be installed before getting started.
+Make sure you have the following prerequisites installed:
 
+- Node.js
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Ravi-aahirwar/zonato.git

@@ -1,6 +1,6 @@
 # Zonato -  Food Ordering Web App  
-Zomato is a online food ordering web  application, i have make a clone Zonato  using React Js.
 [I'm a relative reference to a repository file](../blob/master/LICENSE)
+Zomato is a online food ordering web  application, i have make a clone Zonato  using React Js.
 ## Tech Stack:
 1. React js
 2. CSS3
